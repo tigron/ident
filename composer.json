@@ -1,0 +1,15 @@
+{
+    "name": "tigron/ident",
+    "description": "Rough implementation of an RFC1413 (IDENT) client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gerry Demaret",
+            "email": "gerry@tigron.be"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": { "Tigron\\Ident\\": "lib/" }
+    }
+}
