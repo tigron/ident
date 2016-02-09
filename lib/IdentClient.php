@@ -12,14 +12,52 @@ namespace Tigron\Ident;
 
 class IdentClient {
 
-	
+	/**
+	 * @var int $timeout
+	 * @access private
+	 */
 	private $timeout = 10;
+
+	/**
+	 * @var int $ident_port
+	 * @access private
+	 */
 	private $ident_port = 113;
+
+	/**
+	 * @var int $local_port
+	 * @access private
+	 */
 	private $local_port = null;
+
+	/**
+	 * @var int $remote_port
+	 * @access private
+	 */
 	private $remote_port = null;
+
+	/**
+	 * @var int $remote_address
+	 * @access private
+	 */
 	private $remote_address = null;
+
+	/**
+	 * @var int $result
+	 * @access private
+	 */
 	private $result = null;
 
+	/**
+	 * Constructor
+	 *
+	 * @param string $remote_address
+	 * @param int $remote_port
+	 * @param int $local_port
+	 * @param int $ident_port
+	 * @param int $timeout
+	 * @access public
+	 */
 	public function __construct($remote_address = null, $remote_port = null, $local_port = null, $ident_port = null, $timeout = null) {
 		$this->setRemoteAddress($remote_address);
 		$this->setRemotePort($remote_port);
